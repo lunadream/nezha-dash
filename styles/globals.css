@@ -52,6 +52,8 @@
 @layer base {
   * {
     @apply border-border;
+    scrollbar-width: auto;
+    scrollbar-color: #cf8bf380 transparent;
   }
   html {
     @apply scroll-smooth;
