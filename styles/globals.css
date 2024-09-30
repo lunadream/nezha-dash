@@ -65,6 +65,11 @@
     background-size: cover !important;
     background-image: url(https://a.imgno.de/66e2da34bb50d.jpg) !important;
   }
+  .text-xs .text-lg {
+    color: #ffffff00;
+    background: linear-gradient(30deg, rgb(167 112 239) 0%, rgb(207 139 243) 50%, rgb(253 185 155) 100%);
+    -webkit-background-clip: text;
+  }
 }
 
 @layer utilities {
