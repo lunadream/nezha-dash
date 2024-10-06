@@ -37,7 +37,10 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
-export const dynamic = "force-static";
+// optimization: force static for vercel
+export const dynamic = process.env.VERCEL ? "force-static" : "auto";
+
+export const runtime = 'edge';
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

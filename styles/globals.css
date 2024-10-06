@@ -199,3 +199,11 @@
     opacity: 0.15;
   }
 }
+
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari 和 Opera */
+}
